@@ -1,0 +1,31 @@
+.sign-in-component {
+    // font-family: 'Poppins-Regular';
+    .sign-in-container {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .label {
+            font-family: 'Poppins-SemiBold';
+        }
+        .header {
+            font-weight: 900;
+            font-size: 2rem;
+        }
+        .submit-btn {
+            border-radius: 0px;
+            background-color: black;
+            
+        }
+        .submit-btn:hover {
+            background-color: #0099ff;
+        }
+    }
+    .sign-up-btn {
+        background-color: transparent;
+        border: none;
+        color: #0099ff;
+    }
+    .sign-up-btn:hover {
+        color: #004777;
+        cursor: pointer;
+    }
+}
