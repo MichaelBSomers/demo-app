@@ -1,0 +1,88 @@
+.macbook {
+    font-family: "Poppins-Regular";
+    h3 {
+        font-family: "Poppins-Bold";
+        color: #59bdff;
+    }
+    .header-row {
+        .header-info {
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+        background: rgb(0,0,0);
+        h3 {
+            font-family: "Poppins-Bold";
+            color: #59bdff;
+        }
+        h5 {
+            font-size: 1rem;
+            font-family: "Poppins-Light";
+            color: red;
+        }
+        h1 {
+            font-family: "Poppins-Bold";
+            font-size: 5rem;
+            color: white;
+        }
+        h4 {
+            font-size: 3rem;
+            font-family: "Poppins-Bold";
+            color: #7d7d7d
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-family: "Poppins-Regular";
+            color: #7d7d7d
+        }
+    }
+    .footer-info {
+        padding-right: 100px;
+        .shutterstock-image-wrapper {
+            height: 75%;
+            overflow:hidden;
+            img {
+                margin-top: -20%;
+                height: 450px;
+            }
+        }
+        .subscribe {
+            background-color: #ededed;
+            margin-top: -2%;
+            margin-bottom: 2%;
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                h2 {
+                    font-family: "Poppins-Bold";
+                    color: black;
+                }
+                sub:hover {
+                    cursor: pointer;
+                }
+                button {
+                    border-radius: 0;
+                    background-color: black;
+                    font-family: "Poppins-SemiBold";
+                    font-size: .9rem;
+                    height: 55px;
+                }
+            }
+            input {
+                height: 55px;
+            }
+            
+        }
+        h3 {
+            font-family: "Poppins-SemiBold";
+            font-size: 1.5rem;
+        }
+    }
+    
+    .right-side-nav {
+        background-color: transparent;
+        svg {
+            color: white;
+        }
+    }
+
+}
