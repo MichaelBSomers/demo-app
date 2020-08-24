@@ -7,7 +7,12 @@
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    padding-right: 100px;
+    @media only screen and (min-width: 426px) {
+        padding-right: 100px;
+    }
+    // @media only screen and (min-width: 425px) {
+    //     padding-right: 10px;
+    // }
     .apple-container {
         background-color: black;
         height: 100px;

@@ -25,7 +25,7 @@ const Macbook = () => {
   return (
     <div className={'macbook'}>
       <Row className={'header-row'}>
-        <Col md={5} className={'header-info'}>
+        <Col lg={5} className={'header-info'}>
           <Row>
             <Col>
               <div>
@@ -85,6 +85,27 @@ const Macbook = () => {
         </Col>
       </Row>
       <Row className={'footer-info'}>
+        <Col className={'d-flex d-lg-none justify-content-center align-items-center subscribe p-5 mr-5'}>
+          <div className={'wrapper py-4 px-md-0 px-lg-5'}>
+            <Row className={'pb-5'}>
+              <Col>
+                <h2>
+                  <div className={'sub'}>Subscribe Now</div>
+                </h2>
+              </Col>
+            </Row>
+            <Row className={'subscribe'}>
+              <Col md={8}>
+                <Input block type="email" value={email} onChange={(e) => {setEmail(e.target.value)}} required id='email' maxLength={35} placeholder={'Enter the email address'}/> 
+              </Col>
+              <Col md={4}>
+                <Button className={'submit-btn p-2'} variant="danger" size="md" block type="submit">
+                  Subscribe
+                </Button> 
+              </Col>
+            </Row>
+          </div>
+        </Col>
         <Col md={3} className={'d-flex justify-content-center pt-5'}>
           <h3>
             Buy Now &gt;
@@ -95,8 +116,8 @@ const Macbook = () => {
             <img src={shutterstock} alt={'shutterstock'}/>
           </div>
         </Col>
-        <Col className={'d-flex justify-content-center align-items-center subscribe p-5 mr-5'}>
-          <div className={'wrapper py-4 px-5'}>
+        <Col className={'d-none d-lg-flex justify-content-center align-items-center subscribe p-5 mr-5'}>
+          <div className={'wrapper py-4 px-md-0 px-lg-5'}>
             <Row className={'pb-5'}>
               <Col>
                 <h2>

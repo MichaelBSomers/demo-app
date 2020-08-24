@@ -6,8 +6,10 @@
     }
     .header-row {
         .header-info {
-            padding-top: 100px;
-            padding-left: 100px;
+            @media only screen and (min-width: 425px) {
+                padding-top: 100px;
+                padding-left: 100px;
+            }
         }
         background: rgb(0,0,0);
         h3 {
@@ -34,21 +36,46 @@
             font-family: "Poppins-Regular";
             color: #7d7d7d
         }
+        @media only screen and (max-width: 1704px) {
+            img {
+                height: 600px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 1560px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
     }
     .footer-info {
-        padding-right: 100px;
+        @media only screen and (min-width: 768px) {
+            padding-right: 100px;
+        }
         .shutterstock-image-wrapper {
+            
             height: 75%;
             overflow:hidden;
             img {
-                margin-top: -20%;
-                height: 450px;
+                @media only screen and (max-width: 1437px) {
+                    height: 300px;
+                }
+                @media only screen and (min-width: 1438px) {
+                    margin-top: -20%;
+                    height: 450px;
+                }
             }
         }
         .subscribe {
+            min-width: 500px !important;
             background-color: #ededed;
-            margin-top: -2%;
-            margin-bottom: 2%;
+            @media only screen and (min-width: 1502px) {
+                margin-top: -2%;
+                margin-bottom: 2%;
+            }
+            @media only screen and (max-width: 1501px) {
+                margin-right: 0px !important;
+            }
             .wrapper {
                 width: 100%;
                 height: 100%;
@@ -65,6 +92,12 @@
                     font-family: "Poppins-SemiBold";
                     font-size: .9rem;
                     height: 55px;
+                }
+            }
+            @media only screen and (max-width: 1900px) {
+                .wrapper {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
                 }
             }
             input {

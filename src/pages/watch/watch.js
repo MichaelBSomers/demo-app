@@ -23,7 +23,7 @@ const Watch = () => {
   return (
     <div className={'watch'}>
       <Row className={'header-row'}>
-        <Col md={5}>
+        <Col md={'auto'} lg={5}>
           <Row>
             <Col className={'header'}>
               Apple Watch
@@ -47,7 +47,19 @@ const Watch = () => {
         </Col>
         <Col md={1}>
         </Col>
-        <Col md={6} className={'image-container'}>
+        <Col lg={6} className={'image-container'}>
+          {
+            showWhiteWatch &&
+            <img src={whiteWatch} alt={'white watch'}/>
+          }
+          {
+            !showWhiteWatch &&
+            <img src={blackWatch} alt={'white watch'}/>
+          }
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={12} className={'image-container-small'}>
           {
             showWhiteWatch &&
             <img src={whiteWatch} alt={'white watch'}/>

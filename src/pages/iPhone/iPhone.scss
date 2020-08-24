@@ -1,17 +1,20 @@
 .i-phone {
-    font-family: 'Poppins-Regular';
     .new-products {
         font-family: 'Poppins-Regular';
         font-size: 1.5rem;
     }
     .year {
+        animation: example 1s;
+        font-family: 'Poppins-Regular';
         font-family: 'Poppins-Bold';
         font-size: 3rem;
     }
     .i-phone-container {
         .no-background {
             background-color: white;
-            padding-left: 100px;
+            @media only screen and (min-width: 1256px) {
+                padding-left: 100px;
+            }
             padding-top: 100px;
             .red-bar {
                 width: 100px;
@@ -34,12 +37,18 @@
                 color: red;
                 font-size: 1.5rem;
             }
+            .image-wrapper:hover {
+                cursor: pointer;
+            }
         }
         .info-container {
             .background {
                 background: rgb(218,218,218);
                 background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
-                padding-left: 100px;
+                @media only screen and (min-width: 768px) {
+                    padding-left: 100px;
+                }
+                padding-left: 15px;
                 padding-top: 100px;
             }
             h3 {
@@ -47,6 +56,9 @@
                 color: red
             }
             h1 {
+                @media only screen and (max-width: 768px) {
+                    font-size: 3rem;
+                }
                 font-size: 6rem;
                 font-family: 'Poppins-Bold';
                 color: black;
@@ -79,7 +91,9 @@
                 height: 700px;
             }
             .appleIphonexs {
-                // height: 200px;
+            }
+            .appleIphonexsBack {
+                margin: auto;
             }
         }
     }
@@ -90,6 +104,13 @@
         svg:hover {
             opacity: 100%;
             cursor: pointer;
+        }
+    }
+    @media only screen and (max-width: 756px) {
+        .Iphone12x-container {
+            img {
+                height: 300px;
+            }
         }
     }
 }

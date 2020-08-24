@@ -12,7 +12,7 @@ const RightSideNav = () => {
 const history = useHistory();
 
   return (
-    <div className={'right-side-nav d-flex align-items-center'}>
+    <div className={'right-side-nav align-items-center d-none d-md-flex'}>
         <div className={'link-container'}>
             <Row className={'pb-4'}>
                 <Col className={'text-center'}>
