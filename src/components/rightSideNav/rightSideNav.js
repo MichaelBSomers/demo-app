@@ -1,16 +1,6 @@
-import React, { useContext, useEffect } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
-import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
+import React from "react";
 import { useHistory } from "react-router-dom";
-import {Row, Col, Container, Button } from "reactstrap";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  // Link
-} from "react-router-dom";
+import {Row, Col } from "reactstrap";
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLaptop } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'

@@ -1,15 +1,10 @@
 import React, { useContext, useEffect } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
 import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
 import { useHistory, useLocation  } from "react-router-dom";
-import {Row, Col, Container } from "reactstrap";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Link
 } from "react-router-dom";
 
 import "./home.scss";
@@ -17,10 +12,9 @@ import IPhone from "../iPhone/iPhone";
 import Macbook from "../macbook/macbook";
 import Watch from "../watch/watch";
 import Welcome from "../welcome/welcome";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
 import TopNav from "../../components/topNav/topNav";
-import RightSideNav from "../../components/rightSideNav/rightSideNav";
+import axios from 'axios';
+import { newItemsContext, newItemsContextActions } from "../../context/newItemsContext";
 
 export const HOME_NAV_ROUTES = {
   welcome: '/home/welcome',
@@ -29,9 +23,14 @@ export const HOME_NAV_ROUTES = {
   watch: '/home/watch'
 }
 
+const headers = {
+  "Access-Control-Allow-Origin": "*",
+  'Content-Type': 'application/json',
+}
+
 const Home = () => {
   const loginState = useContext(loginContext)
-  // const usersState = useContext(usersContext)
+  const newItemsState = useContext(newItemsContext)
   const history = useHistory();
   const location = useLocation();
   console.log('location', location.pathname)
@@ -41,7 +40,21 @@ const Home = () => {
     if(!loginState.state.loggedIn) {
         history.push("/");
     }
+    getItemDates()
   })
+
+  const getItemDates = async () => {
+    // TODO Having issues with CORS --- Look into fixes.
+    const results = await axios.get(`https://boalt-interview.herokuapp.com/api/shipping-dates`, {
+      headers: headers,
+      proxy: "https://www.google.com"
+    })
+    console.log('results', results)
+    newItemsState.dispatch({
+      type: newItemsContextActions.UPDATE_ITEM_DATES,
+      value: results
+    })
+  }
 
   return (
     <div className={'home'}>

@@ -1,18 +1,11 @@
 import React, { useContext, useEffect } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
 import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
 import { useHistory } from "react-router-dom";
 import "./iPhone.scss";
-import {Row, Col, Button} from "reactstrap";
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
-import { faLaptop } from '@fortawesome/free-solid-svg-icons'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
+import {Row, Col} from "reactstrap";
 import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { HOME_NAV_ROUTES } from "../home/home";
 
 import iphonePick from "../../assets/Images/Iphone 1@2x.png"
 import appleIphonexs from "../../assets/Images/apple-iphonexs-max-gold.png"

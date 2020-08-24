@@ -1,21 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
 import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
 import { useHistory } from "react-router-dom";
 import "./macbook.scss";
 import {Row, Col, Button, Input} from "reactstrap";
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
-import { faLaptop } from '@fortawesome/free-solid-svg-icons'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
-import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { HOME_NAV_ROUTES } from "../home/home";
-
-import iphonePick from "../../assets/Images/Iphone 1@2x.png"
-import appleIphonexs from "../../assets/Images/apple-iphonexs-max-gold.png"
 import macbookImg from "../../assets/Images/shutterstock_-1.png"
 import shutterstock from "../../assets/Images/shutterstock_-2@2x.png"
 
@@ -27,7 +14,6 @@ const Macbook = () => {
   let [email, setEmail] = useState('')
   
   const loginState = useContext(loginContext)
-//   const usersState = useContext(usersContext)
   const history = useHistory();
   useEffect(() => {
     console.log(loginState.state)

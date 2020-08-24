@@ -1,0 +1,78 @@
+.watch {
+    font-family: "Poppins-Regular";
+    .header-row {
+        padding-left: 100px;
+        padding-top: 100px;
+        background: rgb(230,230,230);
+        background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+        .header {
+            background-color: transparent;
+            color: red;
+            font-size: 2rem;
+            font-family: "Poppins-SemiBold";
+        }
+        .change {
+            color: black;
+            font-size: 7rem;
+            line-height: 7rem;
+            font-family: "Poppins-Bold";
+        }
+        .info {
+            color: black;
+            opacity: 50%;
+            font-size: 2rem;
+        }
+        .shipping {
+            font-size: 1rem;
+            font-family: "Poppins-Light";
+            color: red;
+        }
+    }
+    .right-side-nav {
+        background-color: transparent;
+        svg {
+            color: black;
+        }
+    }
+    .color-picker {
+        .white {
+            padding: 0px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 100%;
+            button {
+                background-color: white;
+            }
+        }
+        .black {
+            padding: 0px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 100%;
+            button {
+                background-color: black;
+            }
+        }
+        .selected {
+            border: 1px solid red;
+        }
+        button {
+            margin-top: 15px;
+            padding: 20px;
+            border-radius: 100%;
+        }
+    }
+    .from {
+        font-size: 3rem;
+        font-family: "Poppins-Bold";
+        opacity: 30%;
+    }
+    .buy {
+        font-size: 1.5rem;
+        font-family: "Poppins-SemiBold";
+        color: Red;
+    }
+
+}

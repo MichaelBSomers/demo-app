@@ -1,8 +1,5 @@
 import React, { useContext, useEffect } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
 import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
 import { useHistory } from "react-router-dom";
 import "./announcement.scss";
 import {Row, Col, Button, Container} from "reactstrap";
@@ -18,12 +15,6 @@ const Announcement = () => {
         history.push("/");
     }
   })
-  
-  const enter = () => {
-    history.push("/login");
-  }
-
-  //TODO add in photo of apple.
 
   return (
     <div className={'announcement'}>

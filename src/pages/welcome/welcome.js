@@ -1,11 +1,8 @@
 import React, { useContext, useEffect } from "react";
-// import {Container} from "reactstrap";
-// import SignInComponent from "../../components/signInComponent/SignInComponent";
 import { loginContext } from "../../context/LoginContext"
-// import { usersContext } from "../../context/UsersContext";
 import { useHistory } from "react-router-dom";
 import "./welcome.scss";
-import {Row, Col, Button} from "reactstrap";
+import {Row, Col} from "reactstrap";
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLaptop } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +13,6 @@ import { HOME_NAV_ROUTES } from "../home/home";
 
 const Welcome = () => {
   const loginState = useContext(loginContext)
-//   const usersState = useContext(usersContext)
   const history = useHistory();
   useEffect(() => {
     console.log(loginState.state)
