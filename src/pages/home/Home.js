@@ -4,7 +4,7 @@ import React, { useContext, useEffect } from "react";
 import { loginContext } from "../../context/LoginContext"
 // import { usersContext } from "../../context/UsersContext";
 import { useHistory } from "react-router-dom";
-import {Row, Col } from "reactstrap";
+import {Row, Col, Container } from "reactstrap";
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,22 +32,28 @@ const Home = () => {
 
   return (
     <div className={'home'}>
-      <Router>
-      <Switch>
-            <Route exact path="/welcome">
+      <div className="left-bar">
+
+      </div>
+      <div className="top-nav">
+        TOP NAV
+      </div>
+        <Router>
+          <Switch>
+            <Route path="/home/welcome">
               <Welcome/>
             </Route>
-            <Route exact path="/iphone">
+            <Route path="/home/iphone">
               <IPhone/>
             </Route>
-            <Route path="/macbook-pro">
+            <Route path="/home/macbook-pro">
               <Macbook/>
             </Route>
-            <Route path="/watch">
+            <Route path="/home/watch">
               <Watch/>
             </Route>
-      </Switch>
-    </Router>
+          </Switch>
+        </Router>
     </div>
   );
 }

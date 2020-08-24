@@ -1,0 +1,49 @@
+.welcome {
+    background-color: #e6e6e6;
+    font-family: 'Poppins-Regular';
+    .new-products {
+        font-family: 'Poppins-Regular';
+        font-size: 1.5rem;
+    }
+    .year {
+        font-family: 'Poppins-Bold';
+        font-size: 3rem;
+    }
+    .container {
+        height: 100vh;
+        .enter-btn {
+            z-index: 2;
+            font-family: 'Poppins-SemiBold';
+            border-radius: 0px;
+            background-color: black;
+            z-index: 2;
+        }
+        .enter-btn:hover {
+            background-color: #0099ff;
+        }
+        .apple-container {
+            opacity: 10%;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            svg {
+                height: 350px;
+                width: 350px;
+            }
+        } 
+        .welcome-to-apple {
+            font-size: 4rem;
+            font-family: "Poppins-Bold";
+        }
+        .see-products {
+            color: #0099ff;
+            font-family: "Poppins-SemiBold"
+        }
+    }
+    svg {
+        opacity: 50%;
+    }
+    svg:hover {
+        opacity: 100%;
+    }
+}

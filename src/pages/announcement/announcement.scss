@@ -1,19 +1,37 @@
 .announcement {
-    height: 100vh;
-    width: 100vh;
-}
-
-.announcement:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.1;
-    background-image: url('../../assets/Images/apple.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    // z-index: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, #0099ff 100%);
+    font-family: 'Poppins-Regular';
+    .new-products {
+        font-family: 'Poppins-Regular';
+        font-size: 1.5rem;
+    }
+    .year {
+        font-family: 'Poppins-Bold';
+        font-size: 3rem;
+    }
+    .container {
+        height: 100vh;
+        .enter-btn {
+            z-index: 2;
+            font-family: 'Poppins-SemiBold';
+            border-radius: 0px;
+            background-color: black;
+            z-index: 2;
+        }
+        .enter-btn:hover {
+            background-color: #0099ff;
+        }
+        .apple-container {
+            opacity: 10%;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            svg {
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
 }

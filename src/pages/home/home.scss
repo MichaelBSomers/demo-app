@@ -1,0 +1,38 @@
+.home {
+    // height: 100%;
+    // width: 100%;
+    .header {
+        background-color: white;
+        height: 100px;
+        width: 100%;
+    }
+    .left-bar {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0; 
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .top-nav {
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0; 
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        // padding-top: 20px;
+    }
+    .home-container {
+        // position: absolute;
+        // top: 100px;
+        // left: 100px;
+        // height: 100%;
+        // width: 100%;
+    }
+}
