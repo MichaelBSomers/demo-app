@@ -1,0 +1,95 @@
+.i-phone {
+    font-family: 'Poppins-Regular';
+    .new-products {
+        font-family: 'Poppins-Regular';
+        font-size: 1.5rem;
+    }
+    .year {
+        font-family: 'Poppins-Bold';
+        font-size: 3rem;
+    }
+    .i-phone-container {
+        .no-background {
+            background-color: white;
+            padding-left: 100px;
+            padding-top: 100px;
+            .red-bar {
+                width: 100px;
+                background-color: red;
+                height:10px;
+            }
+            .gray-bar {
+                width: 100px;
+                height:10px;
+                background-color: gray;
+            }
+            .from {
+                font-family: "Poppins-Bold";
+                opacity: 50%;
+                font-size: 3rem;
+                line-height: 2rem;
+            }
+            .buy {
+                font-family: "Poppins-SemiBold";
+                color: red;
+                font-size: 1.5rem;
+            }
+        }
+        .info-container {
+            .background {
+                background: rgb(218,218,218);
+                background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+                padding-left: 100px;
+                padding-top: 100px;
+            }
+            h3 {
+                font-family: 'Poppins-Bold';
+                color: red
+            }
+            h1 {
+                font-size: 6rem;
+                font-family: 'Poppins-Bold';
+                color: black;
+            }
+            h4 {
+                color: black;
+                opacity: 50%;
+            }
+            h5 {
+                color: red;
+            }
+            .i-phone-apple-container {
+            width: 100%;
+            height: 70%;
+            opacity: 5%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            svg {
+                height: 200px;
+                width: 200px;
+            }
+            
+            
+        }
+        }
+        .Iphone12x-container {
+            margin-top: 5%;
+            .Iphone12x {
+                height: 700px;
+            }
+            .appleIphonexs {
+                // height: 200px;
+            }
+        }
+    }
+    .link-container {
+        svg {
+            opacity: 50%;
+        }
+        svg:hover {
+            opacity: 100%;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.top-nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-right: 100px;
+    .apple-container {
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        svg {
+            color: white;
+        }
+    }
+    .link-container {
+        font-family: "Poppins-Regular";
+        .link:hover {
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        button {
+            background-color: #0099ff;
+            border-radius: 40px;
+            border: none;
+        }
+    }
+}

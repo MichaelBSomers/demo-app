@@ -1,5 +1,6 @@
 .welcome {
-    background-color: #e6e6e6;
+    background: rgb(218,218,218);
+    background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
     font-family: 'Poppins-Regular';
     .new-products {
         font-family: 'Poppins-Regular';
@@ -11,6 +12,7 @@
     }
     .container {
         height: 100vh;
+        margin-top: -100px;
         .enter-btn {
             z-index: 2;
             font-family: 'Poppins-SemiBold';
@@ -22,10 +24,8 @@
             background-color: #0099ff;
         }
         .apple-container {
-            opacity: 10%;
+            opacity: 5%;
             position: absolute;
-            height: 100%;
-            width: 100%;
             svg {
                 height: 350px;
                 width: 350px;
@@ -37,13 +37,17 @@
         }
         .see-products {
             color: #0099ff;
+            font-size: 1.2rem;
             font-family: "Poppins-SemiBold"
         }
     }
-    svg {
-        opacity: 50%;
-    }
-    svg:hover {
-        opacity: 100%;
+    .link-container {
+        svg {
+            opacity: 50%;
+        }
+        svg:hover {
+            opacity: 100%;
+            cursor: pointer;
+        }
     }
 }

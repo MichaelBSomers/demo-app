@@ -3,7 +3,7 @@ import React, {createContext, useReducer} from 'react';
 const initialState = [
   {
     name: 'Michael',
-    email: 'Michael@gmail.com',
+    email: 'Michael1@gmail.com',
     password: '123'
   }
 ];
